@@ -32,3 +32,24 @@ export const setId = payload => {
     payload,
   };
 };
+
+export const setLoading = payload => {
+  return {
+    type: 'SET_LOADING',
+    payload,
+  };
+};
+
+export const setProductImage = payload => {
+  return {
+    type: 'SET_PRODUCT_IMAGE',
+    payload,
+  };
+};
+
+export const getProductImage = payload => {
+  return {
+    type: 'GET_PRODUCT_IMAGE',
+    payload,
+  };
+};

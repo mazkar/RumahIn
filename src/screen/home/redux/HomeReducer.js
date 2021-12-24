@@ -1,6 +1,7 @@
 const initialState = {
   allProduct: [],
   productDetail: [],
+  productImage: [],
   id: '',
   isLoading: false,
 };
@@ -37,7 +38,16 @@ export const HomeReducer = (state = initialState, action) => {
     case 'SET_LOADING':
       return {
         ...state,
-        isLoading: false,
+        isLoading: action.payload,
+      };
+    case 'SET_PRODUCT_IMAGE':
+      return {
+        ...state,
+        productImage: action.payload,
+      };
+    case 'GET_PRODUCT_IMAGE':
+      return {
+        ...state,
       };
 
     default:
